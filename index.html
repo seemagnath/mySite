@@ -8,20 +8,35 @@
 </head>
 <body>
 
-<div data-role="page">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
+    <div data-role="page" id="page">
+        <div data-role="header">
+            <h1>Welcome To My Homepage</h1>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <p>I Am Now A Mobile Developer!!</p>
+            <a href="#pagetwo" data-transition="slide">Go to Page Two</a>
+        </div>
+        
+        <div data-role="footer">
+            <h1>Footer Text</h1>
+        </div>
+    </div> 
 
-  <div data-role="main" class="ui-content">
-    <p>I Am Now A Mobile Developer!!</p>
-  </div>
 
-  <div data-role="footer">
-    <h1>Footer Text</h1>
-  </div>
-</div> 
-
+    <div data-role="page" id="pagetwo" >
+        <div data-role="header">
+            <h1>Welcome To My Homepage</h1>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <a href="#page" data-transition="flip">Go to Page One</a>
+        </div>
+        
+        <div data-role="footer">
+            <h1>Footer Text</h1>
+        </div>
+    </div>
 
 </body>
 </html>
